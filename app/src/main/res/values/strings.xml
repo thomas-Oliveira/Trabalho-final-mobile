@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Denuncie</string>
+
+    <string-array name="cadastro_spinnerCategoria">
+        <item>Categorias</item>
+        <item>Vias públicas de Acesso</item>
+        <item>Equipamentos Comunitários</item>
+        <item>Limpeza Urbana e Saneamento</item>
+    </string-array>
+</resources>

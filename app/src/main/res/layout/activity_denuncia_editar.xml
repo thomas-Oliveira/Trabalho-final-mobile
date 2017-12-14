@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/barraSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#909070"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/denunciaEditar_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/denunciaEditar_urimidia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/barraSuperior"/>
+
+    <Button
+        android:id="@+id/denunciaEditar_reenviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/denunciaEditar_urimidia"
+        android:text="Regravar"/>
+
+    <Spinner
+        android:text="TROCAR ESSA PARTE POR UM SPINER QUE A ERIKA FEZ"
+        android:id="@+id/denunciaEditar_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/denunciaEditar_reenviar"/>
+
+    <TextView
+        android:id="@+id/denunciaEditar_textdescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/denunciaEditar_categoria"
+        android:text="Descrição: "/>
+
+    <EditText
+        android:id="@+id/denunciaEditar_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/denunciaEditar_textdescricao"
+        android:layout_below="@+id/denunciaEditar_categoria"/>
+
+    <Button
+        android:id="@+id/denunciaEditar_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:onClick="Salvar"
+        android:layout_below="@+id/denunciaEditar_textdescricao"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

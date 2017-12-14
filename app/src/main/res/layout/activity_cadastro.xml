@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thomas.denuncie.CadastroActivity">
+
+    <TextView
+        android:id="@+id/cadatro_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/cadastro_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cadatro_text"/>
+
+    <Spinner
+        android:id="@+id/cadastro_spinnerCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/cadastro_edit">
+    </Spinner>
+
+    <ImageView
+        android:id="@+id/cadastro_imageView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cadastro_spinnerCategoria"
+        android:layout_gravity="center"  />
+
+    <VideoView
+        android:id="@+id/cadastro_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/cadastro_buttonCaptImage"
+        android:layout_below="@+id/cadastro_imageView"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/cadastro_buttonCaptImage"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Capturar foto"
+        android:layout_above="@+id/cadastro_buttonEnviar"
+        android:onClick="image"/>
+
+    <Button
+        android:id="@+id/cadastro_buttonCapVideo"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Capturar vídeo"
+        android:layout_toRightOf="@+id/cadastro_buttonCaptImage"
+        android:layout_above="@+id/cadastro_buttonEnviar"
+        android:onClick="video"/>
+
+    <Button
+        android:id="@+id/cadastro_buttonEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_alignParentBottom="true"
+        android:onClick="cadastrarDenuncia"/>
+
+</RelativeLayout>

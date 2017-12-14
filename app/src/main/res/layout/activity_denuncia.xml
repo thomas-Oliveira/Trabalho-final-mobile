@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/barraSuperior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#909070"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/denuncia_id"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <VideoView
+                android:id="@+id/denuncia_urimidia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/barraSuperior"
+                android:padding="5dp" />
+
+            <ImageView
+                android:id="@+id/denuncia_imageView"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/barraSuperior"
+                android:layout_gravity="center"  />
+
+            <TextView
+                android:text="Usuario "
+                android:padding="5dp"
+                android:gravity="center"
+                android:id="@+id/denuncia_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/denuncia_urimidia" />
+
+            <TextView
+                android:text="00/00/0000 "
+                android:padding="5dp"
+                android:gravity="center"
+                android:id="@+id/denuncia_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/denuncia_usuario"/>
+
+            <TextView
+                android:text="multa "
+                android:padding="5dp"
+                android:gravity="center"
+                android:id="@+id/denuncia_categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/denuncia_data"/>
+
+            <TextView
+                android:padding="5dp"
+                android:gravity="center"
+                android:id="@+id/denuncia_traco2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:layout_below="@+id/denuncia_data"
+                android:layout_toEndOf="@+id/denuncia_categoria"/>
+
+            <TextView
+                android:text="descricao "
+                android:padding="5dp"
+                android:gravity="center"
+                android:id="@+id/denuncia_descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/denuncia_data"
+                android:layout_toEndOf="@+id/denuncia_traco2"/>
+
+            <TextView
+                android:text="provedor"
+                android:id="@+id/denuncia_provedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/denuncia_descricao"/>
+
+            <TextView
+                android:text="latitude "
+                android:padding="5dp"
+                android:gravity="center"
+                android:id="@+id/denuncia_latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/denuncia_provedor"/>
+
+            <TextView
+                android:text="longitude "
+                android:padding="5dp"
+                android:gravity="center"
+                android:id="@+id/denuncia_longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/denuncia_provedor"
+                android:layout_toEndOf="@+id/denuncia_traco"/>
+
+            <TextView
+                android:padding="5dp"
+                android:gravity="center"
+                android:id="@+id/denuncia_traco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:layout_below="@+id/denuncia_provedor"
+                android:layout_toEndOf="@+id/denuncia_latitude"/>
+        </RelativeLayout>
+        <WebView
+            android:id="@+id/denuncia_mapa"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+</ScrollView>

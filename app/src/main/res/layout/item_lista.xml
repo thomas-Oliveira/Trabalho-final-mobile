@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:id="@+id/barraSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#909070"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/itemlist_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/_itemlist_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barraSuperior"
+        android:text="Usuario: "
+        android:padding="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/itemlist_usuario"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barraSuperior"
+        android:layout_toEndOf="@+id/_itemlist_usuario"/>
+
+    <TextView
+        android:id="@+id/_itemlist_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_itemlist_usuario"
+        android:text="Data: "
+        android:padding="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/itemlist_data"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemlist_usuario"
+        android:layout_toEndOf="@+id/_itemlist_data"/>
+
+    <TextView
+        android:id="@+id/_itemlist_categoria"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_itemlist_data"
+        android:text="Categoria: "/>
+
+    <TextView
+        android:id="@+id/itemlist_categoria"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_itemlist_data"
+        android:layout_toEndOf="@+id/_itemlist_categoria"/>
+
+
+</RelativeLayout>

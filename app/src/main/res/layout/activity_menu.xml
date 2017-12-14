@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thomas.denuncie.MenuActivity"
+    android:padding="35dp"
+    android:id="@+id/relativeLayout">
+
+    <TextView
+        android:id="@+id/menu_Listar_denuncia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableBottom = "@drawable/listar"
+        android:onClick="selecionarOpcao"
+        android:text="Listar denuncias"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/menu_cadastro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/menu_compartilhar_denuncia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:drawableBottom="@drawable/compartilhar"
+        android:onClick="selecionarOpcao"
+        android:text="Compartilhar denúncias"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/menu_pegar_denuncias"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_Listar_denuncia"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/menu_pegar_denuncias"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:drawableBottom="@drawable/recuperar"
+        android:onClick="selecionarOpcao"
+        android:text="Baixar denuncias"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu_compartilhar_denuncia"
+        app:layout_constraintTop_toBottomOf="@+id/menu_cadastro"
+        app:layout_constraintVertical_bias="0.49" />54
+
+    <TextView
+        android:id="@+id/menu_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableBottom="@drawable/cadastro"
+        android:onClick="selecionarOpcao"
+        android:text="Cadastrar"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu_Listar_denuncia"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
